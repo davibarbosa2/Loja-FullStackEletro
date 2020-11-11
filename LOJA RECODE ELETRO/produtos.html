@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Full Stack Eletro</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="funcoes.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body style="background: none;">
+    
+    <!--MENU-->
+    <nav >
+        <ul class="menu nav container-fluid">
+            <li><a href="index.html" >HOME</a></li>
+            <li><a href="produtos.html"class="ativo" >PRODUTOS</a></li>
+            <li><a href="lojas.html">LOJAS FISICAS</a></li>
+            <li><a href="faleconosco.html">FALE CONOSCO</a></li>
+        </ul> 
+        
+    </nav>
+    <!--FIM MENU-->
+    
+    <header>
+        <h2>PRODUTOS</h2>
+    </header>
+    <hr>
+    
+    
+    <section class="categorias">
+        
+        
+        <h3>
+            Categorias
+        </h3>
+        
+        <ul>
+            <li onclick="exibir_todos()">Todos (12)</li>
+            <li onclick="exibir_categoria('geladeira')">Geladeiras (3)</li>
+            <li onclick="exibir_categoria('fogao')">Fogões (2)</li>
+            <li onclick="exibir_categoria('microondas')">Microondas (3)</li>
+            <li onclick="exibir_categoria('lavaroupas')">Lavadora de Roupas (2)</li>
+            <li onclick="exibir_categoria('lavaloucas')">Lava-louças (2)</li>
+        </ul>
+    </section>
+    
+    <div class="container">
+    <section class="produtos">
+        
+        <div class="produto-single" id="lavaloucas" style="display: block;"  >
+            <img src="./imagens/lava-loucas-prata.jpeg" alt="" onclick="destaque(this)" width="150px">
+            <p>Lava-Louças Prata</p>
+            <p class="preco-antigo">1.499,00</p>
+            <p class="preco-novo">899,99</p>
+        </div>
+        
+        <div class="produto-single" id="lavaloucas" style="display: block;" >
+            <img src="./imagens/lava-loucas-preto.jpeg" alt=""onclick="destaque(this)"width="150px" >
+            <p>Lava-Louças Preto</p>
+            <p class="preco-antigo">1.499,00</p>
+            <p class="preco-novo">899,99</p>
+        </div>
+        
+        <div class="produto-single" id="lavaroupas" style="display: block;"  >
+            <img src="./imagens/maquina-de-lavar-branca.jpeg" alt="" onclick="destaque(this)"width="150px">
+            <p>Maquina de Lavar Branca</p>
+            <p class="preco-antigo">2.499,00</p>
+            <p class="preco-novo">1.599,99</p>
+        </div>
+    </section>
+    
+    <section class="produtos">
+        <div class="produto-single" id="lavaroupas" style="display: block;" >
+            <img src="./imagens/maquina-de-lavar-prata.jpeg" alt="" onclick="destaque(this)"width="150px">
+            <p>Máquina de Lavar Prata</p>
+            <p class="preco-antigo">2.499,00</p>
+            <p class="preco-novo">1.999,99</p>
+        </div>
+        
+        <div class="produto-single" id="microondas" style="display: block;" >
+            <img src="./imagens/micoondas-prata.jpeg" alt=""onclick="destaque(this)"width="150px" >
+            <p>Microondas Prata</p>
+            <p class="preco-antigo">1.499,00</p>
+            <p class="preco-novo">799,99</p>
+        </div>
+        
+        <div class="produto-single" id="microondas" style="display: block;"  >
+            <img src="./imagens/microondas-branco.jpeg" alt="" onclick="destaque(this)"width="150px">
+            <p>Microondas Branco</p>
+            <p class="preco-antigo">1.499,00</p>
+            <p class="preco-novo">999,99</p>
+        </div>
+    </section> 
+    
+    
+    <section class="produtos">
+        <div class="produto-single" id="microondas" style="display: block;"  >
+            <img src="./imagens/microondas-preto.jpeg" alt=""onclick="destaque(this)" width="150px">
+            <p>Microondas Preto</p>
+            <p class="preco-antigo">1000,00</p>
+            <p class="preco-novo">699,99</p>
+        </div>
+        
+        <div class="produto-single" id="fogao" style="display: block;" >
+            <img src="./imagens/fogao-brastemp-preto.jpeg" alt=""onclick="destaque(this)"width="150px" >
+            <p>Fogão Brastemp Preto</p>
+            <p class="preco-antigo">1.499,00</p>
+            <p class="preco-novo">799,99</p>
+        </div>
+        
+        <div class="produto-single" id="fogao" style="display: block;" >
+            <img src="./imagens/fogao-piacere-branco.jpeg" alt=""onclick="destaque(this)"width="150px" >
+            <p>Fogão Piacere Branco</p>
+            <p class="preco-antigo">2.499,00</p>
+            <p class="preco-novo">1.599,99</p>
+        </div>
+    </section>
+    
+    <section class="produtos">
+        <div class="produto-single" id="geladeira" style="display: block;" >
+            <img src="./imagens/geladeira-brastemp-frost-free-inverse-419-litros-bry59ae-photo243349291-12-3c-18.jpeg" alt=""onclick="destaque(this)" width="150px">
+            <p>Geladeira Brastemp Frost Free Inverse 419 litros</p>
+            <p class="preco-antigo">1.499,00</p>
+            <p class="preco-novo">999,99</p>
+        </div>
+        
+        
+        <div class="produto-single" id="geladeira" style="display: block;" >
+            <img src="./imagens/geladeira-brastemp.jpeg" alt=""onclick="destaque(this)"width="150px" >
+            <p>Geladeira Brastemp Prata</p>
+            <p class="preco-antigo">3.499,00</p>
+            <p class="preco-novo">2.599,99</p>
+        </div>
+        
+        <div class="produto-single" id="geladeira" style="display: block;" >
+            <img src="./imagens/brastemp-branca.png" alt=""onclick="destaque(this)"width="150px" >
+            <p>Geladeira Brastemp Branca</p>
+            <p class="preco-antigo">2.499,00</p>
+            <p class="preco-novo">1.599,99</p>
+        </div>
+    </section>
+    </div> 
+    
+    <footer>
+        <div class="forma_pagamento">
+            <h4>Formas de pagamento</h4>
+            <img style="width:10cm;" src="./imagens/pagamento.png" alt="formas de pagamento" >
+            
+        </div> 
+        &copy;Recode Pro
+    </footer>
+</body>
+</html>
